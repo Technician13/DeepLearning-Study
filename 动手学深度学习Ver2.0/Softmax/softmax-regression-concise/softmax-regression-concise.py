@@ -13,7 +13,7 @@ def init_weights(m):
 
 net.apply(init_weights)
 
-loss = nn.CrossEntropyLoss()
+loss = nn.CrossEntropyLoss()  
 trainer = torch.optim.SGD(net.parameters(), lr=0.1)
 
 num_epochs = 10
